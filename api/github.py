@@ -19,7 +19,7 @@ def fetch_repos(username="torvalds", per_page=100):
     headers = {"User-Agent": "tech4youth-lab6-fetcher"}
 
     try:
-        response = requests.get(url, params=params, headers=headers, timeout=10)
+        response = requests.get(url, params=params, headers=headers, timeout=20)
         response.raise_for_status()
     except requests.exceptions.Timeout:
         print("The request timed out.")
