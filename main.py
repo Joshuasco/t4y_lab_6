@@ -5,6 +5,7 @@ computes non-trivial aggregations (stars, language breakdown, rankings),
 handles missing/malformed fields gracefully, and exports the records to CSV.
 """
 
+import utils.session
 import csv
 import sys
 from api.github import fetch_repos as api_fetch_repos
